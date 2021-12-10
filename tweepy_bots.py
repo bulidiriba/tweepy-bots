@@ -19,3 +19,14 @@ for tweet in timeline:
 
 # To make a tweet
 #api.update_status("Test tweet from Tweepy Python")
+
+# to get the details of given user
+user = api.get_user(screen_name="MikezGarcia")
+print("User details")
+print("name: ", user.name)
+print("description: ", user.description)
+print("location: ", user.location)
+
+print("Last 20 followers of the user: ")
+for follower in user.followers():
+    print(follower.name)
