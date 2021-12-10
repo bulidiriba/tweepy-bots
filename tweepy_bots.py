@@ -12,7 +12,10 @@ try:
 except:
     print("Error during authentication")
 
-# To get the latest list of timeline(20 by default)
+# To get the latest list of tweet from timeline(20 by default)
 timeline = api.home_timeline()
 for tweet in timeline:
     print(f"{tweet.user.name} said {tweet.text}")
+
+# To make a tweet
+#api.update_status("Test tweet from Tweepy Python")
