@@ -30,3 +30,7 @@ print("location: ", user.location)
 print("Last 20 followers of the user: ")
 for follower in user.followers():
     print(follower.name)
+
+
+# To follow or create a freindship(e.g to follow @realpython)
+api.create_friendship("realpython")
